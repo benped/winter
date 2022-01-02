@@ -6,6 +6,10 @@ h1 {
   font-style: bold;
 }
 
+h2 {
+  text-align: left;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -25,12 +29,14 @@ h1 {
   grid-column: 4 / 10;
   text-align: center;
   background: lightgray;
+
 }
 
 .nav {
   text-align: left;
   grid-column: 2 / 4;
   color: black;
+
 }
 
 .right {
@@ -40,25 +46,28 @@ h1 {
 
 .search {
   border-radius: 25px;
-  background: gray;
+  background: lightgray;
   height: 25px;
-  text-align: center;
+  justify-content: center;
   padding-top: 12px;
+  color: gray;
 }
 
 .bubble {
   border-radius: 25px;
-  background: gray;
+  background: lightgray;
   padding: 20px;
   width: 2fr;
   height: full;
   text-align: center;
+  margin: 25px 10px 25px 10px;
 }
 
 .trends {
   grid-column: 10;
   grid-row: 6;
-  border: 1px solid black;
+/*  border: 1px solid black; */
+  text-align: left;
 }
 
 .icon {
@@ -75,7 +84,27 @@ h1 {
   flex-direction: row;
 }
 
+
 .tweet {
   background:#1DA1F2;
   color: white;
+}
+
+.image-cropper {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.handle {
+  display: flex;
+  align-items: right;
+  flex-direction: column;
+
+}
+
+h3 h4 {
+  margin-top: -5px;
 }
