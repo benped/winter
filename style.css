@@ -103,12 +103,11 @@ h2 {
   border-radius: 50%;
 }
 
-.handle {
-  display: flex;
+/* .handle {
+  display: inline;
   align-items: right;
   flex-direction: column;
-
-}
+} */
 
 .tweetbox {
 display: flex;
