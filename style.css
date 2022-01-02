@@ -1,29 +1,81 @@
+body {
+  font-family: sans-serif;
+}
+
 h1 {
-  font-style: italic;
+  font-style: bold;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   border: 1px solid black;
 }
 
 .container>div {
-  background: darkblue;
-  color: white;
+  /* background: darkblue; */
+  /*   color: white; */
   font-weight: bold;
   padding: 5px;
   height: 1280px;
 }
 
 .center {
-  grid-column-start: SPAN 6;
+  grid-column: 4 / 10;
   text-align: center;
-  background-color: red;
+  background: lightgray;
 }
 
 .nav {
-  grid-column-start: SPAN 3;
-  text-align: right;
+  text-align: left;
+  grid-column: 2 / 4;
+  color: black;
+}
 
+.right {
+  grid-column: 10 / 13;
+  grid-row: auto;
+}
+
+.search {
+  border-radius: 25px;
+  background: gray;
+  height: 25px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.bubble {
+  border-radius: 25px;
+  background: gray;
+  padding: 20px;
+  width: 2fr;
+  height: full;
+  text-align: center;
+}
+
+.trends {
+  grid-column: 10;
+  grid-row: 6;
+  border: 1px solid black;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  align-content: flex-start;
+  padding-right: 25px;
+
+}
+
+.image-txt-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.tweet {
+  background:#1DA1F2;
+  color: white;
 }
